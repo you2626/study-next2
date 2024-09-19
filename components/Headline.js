@@ -3,6 +3,7 @@ import styles from "@/styles/Home.module.css";
 
 
 export function Headline(props) {
+  
   return (
     <>
           <Image
@@ -14,11 +15,10 @@ export function Headline(props) {
             priority
           />
           <ol>
-            <li>
-              {props.title}<code>pages/{props.page}.js</code>.
-            </li>
+            {props.code}
             <li>Save and see your changes instantly.</li>
           </ol>
+          
     </>
   );
 }

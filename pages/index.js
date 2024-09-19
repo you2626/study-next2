@@ -3,8 +3,7 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import styles from "@/styles/Home.module.css";
 import { Footer } from "@/components/Footer";
-import { Links } from "@/components/Links";
-import {Headline} from "@/components/Headline";
+import { Main } from "@/components/Main";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,10 +28,7 @@ export default function Home() {
       <div
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
-        <main className={styles.main}>
-          <Headline title="Index" page="index"/>
-          <Links />
-        </main>
+       <Main page="index" />
        <Footer />
       </div>
     </>
